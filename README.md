@@ -1,4 +1,6 @@
-# 🚲 Proyecto 1: Tienda de Bicicletas (MongoDB)
+``markdown
+
+# 🚲 Proyecto 1: Tienda de Bicicletas
 
 **Universidad Florencio del Castillo**  
 **Ingeniería Informática**  
