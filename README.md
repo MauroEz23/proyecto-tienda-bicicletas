@@ -1,9 +1,3 @@
-
-## Paso 5.2: Reemplazar el `README.md`
-
-Abre el `README.md` que GitHub creó automáticamente y reemplaza todo su contenido con:
-
-```markdown
 # 🚲 Proyecto 1: Tienda de Bicicletas (MongoDB)
 
 **Universidad Florencio del Castillo**  
