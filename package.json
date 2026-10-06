@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-tienda-bicicletas",
+  "version": "1.0.0",
+  "description": "Proyecto 1 - Base de datos MongoDB para tienda de bicicletas",
+  "main": "database/database.js",
+  "scripts": {
+    "start": "node database/database.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  },
+  "author": "Tu Nombre",
+  "license": "ISC"
+}
