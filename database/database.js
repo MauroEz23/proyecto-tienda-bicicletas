@@ -1,7 +1,7 @@
 // ============================================================
 // PROYECTO 1 - DESARROLLO CON PLATAFORMAS ABIERTAS
 // Base de datos: Tienda de Bicicletas
-// Autor: Mauro Rdoriguez, Yannela
+// Autor: Mauro Rdoriguez, Yannela Castillo
 // ============================================================
 
 // Importar MongoClient y ObjectId de la librería mongodb
