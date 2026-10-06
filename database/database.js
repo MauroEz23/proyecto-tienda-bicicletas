@@ -1,24 +1,19 @@
 // ============================================================
 // PROYECTO 1 - DESARROLLO CON PLATAFORMAS ABIERTAS
 // Base de datos: Tienda de Bicicletas
-// Autor: Tu Nombre Completo
-// Fecha: Octubre 2026
-// ============================================================
-// Este archivo hace TODO: conecta a MongoDB, inserta datos de
-// prueba, actualiza, elimina y ejecuta las 4 consultas que
-// pide el proyecto.
+// Autor: Mauro Rdoriguez, Yannela
 // ============================================================
 
-// Importamos MongoClient y ObjectId de la librería mongodb
+// Importar MongoClient y ObjectId de la librería mongodb
 const { MongoClient, ObjectId } = require("mongodb");
 
-// URL de conexión local (MongoDB corre en el puerto 27017 por defecto)
+// URL de conexión local 
 const url = "mongodb://127.0.0.1:27017";
 
 // Nombre de la base de datos
 const nombreDB = "tienda_bicicletas";
 
-// Creamos el cliente de MongoDB
+// cliente de MongoDB
 const cliente = new MongoClient(url);
 
 // ============================================================
@@ -26,14 +21,12 @@ const cliente = new MongoClient(url);
 // ============================================================
 async function main() {
   try {
-    // Nos conectamos al servidor de MongoDB
+    
     await cliente.connect();
     console.log("✅ Conectado a MongoDB correctamente");
 
-    // Seleccionamos la base de datos
     const db = cliente.db(nombreDB);
 
-    // Definimos las colecciones (como si fueran tablas en SQL)
     const marcas = db.collection("marcas");
     const bicicletas = db.collection("bicicletas");
     const usuarios = db.collection("usuarios");
@@ -43,8 +36,6 @@ async function main() {
 
     // --------------------------------------------------------
     // LIMPIAR COLECCIONES (para evitar duplicados)
-    // Esto no lo pide el profe, pero es buena práctica para
-    // que el script se pueda correr varias veces sin problemas.
     // --------------------------------------------------------
     await marcas.deleteMany({});
     await bicicletas.deleteMany({});
@@ -98,7 +89,6 @@ async function main() {
     // ============================================================
     // INSERTAR BICICLETAS
     // ============================================================
-    // Primero buscamos los _id de las marcas para referenciarlas
     const trek = await marcas.findOne({ nombre: "Trek" });
     const specialized = await marcas.findOne({ nombre: "Specialized" });
     const giant = await marcas.findOne({ nombre: "Giant" });
