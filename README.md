@@ -26,6 +26,7 @@ El modelo de datos está preparado para futuras integraciones con un front-end y
 ---
 
 ## 📁 Estructura del Repositorio
+
 /proyecto-tienda-bicicletas
 │
 ├── /database
@@ -38,7 +39,6 @@ El modelo de datos está preparado para futuras integraciones con un front-end y
 ├── package.json # Dependencias del proyecto
 └── README.md # Este archivo
 
-text
 
 ---
 
@@ -58,7 +58,7 @@ ventas.bicicleta.id → bicicletas._id
 ventas.usuario.id → usuarios._id
 bicicletas.idMarca → marcas._id
 
-text
+
 
 **Nota:** En `ventas` se guardan datos anidados (modelo, tipo, marca, nombre y correo del usuario) para evitar `$lookup` en las consultas de reportes.
 
